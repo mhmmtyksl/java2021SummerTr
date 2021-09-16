@@ -1,0 +1,51 @@
+INTERFACE
+Interface asla bir class degildir. Interface interface dir.
+1)	Interface yapilarda concrete method asla creat edilemez.(ozel
+	concrete method olabilir ama istisna ilerde gorecegiz)
+	Sadece abstract methodlar creat edilir.
+2)	Java multiple inhertitance desteklemez. Ancak interface
+	parentler multiple inheritance i destekler.
+3)	Birden fazla parent classlarda ayni isimli method olmasi
+	durumunda child class ayni isimli farkli bodyli methodlardan
+	hangisini kullanacagini secemez. Fakat Interface lerde 
+	methodlarin bodyleri olmadigindan ayni isimli methodlar
+	birbiriyle tamamen ayni oldugu icin secim tercih soz konusu
+	degildir. Child class parent Interface den ayni isimli 
+	methodlardan birini override ederek bu sorun cozulur.
+Not:Parent Interface lerde ayni isimli farkli return typli 
+	methodlar child classta CTE verir.
+4)	Interface yapilarda tum methodlar abstract olmak zorunda 
+	oldugundan method signuture a abstract keywordu yazilmayabilir.
+	
+	public abstract void koltuk(); // abstract method, abstract keyword kullanilmis
+	public void ayna();// abstract method, abstract keyword kullanilmamis.
+5)	Interface lardeki tum member lar public oldugu icin Accesmodifier
+	yazilmasa da public ile ayni isi yapar.
+	public void ayna(); ve void ayna(); ayni islemi yaparlar.
+Not:Normal classlarda accessModifier yazilmazsa defauilt degeri alir. 
+	Ancak Interface lerde AccessModifier yazilmazsa public olur.
+6)	Interface ler kendi aralarinda parent child iliskisi kurabilirler.
+	Interfaceleri boir class aparent yapmak icin implemets kullanilir
+	classlari birbirine parent yapmak icin extends keywordu kullanilir.
+	class-->class : extends
+	interface-->interface : extends
+	class-->interface  : implements
+	interface-->class : OLAMAZ. Interface in parent i olamaz
+7)	Interface lerde variableler mutlaka final dir.
+	a)Final variable lar italik Bold dur ve buyuk harfle yazilmali.
+	b)Final variable lar initialize edilmezse CTE verir.
+8)	Interfacelerde variable ler mutlaka statictir. Dolayisiyla obje creat etmeden Interface ismi ile ulasilabilir.
+9)	Interface lerde tum memberlar public tir. Dolayisiyla tum Interface variable lari
+	public+static+final dir (Yazsa da yazmasa da)
+	System.out.print.ln(S1.RENK); CTE verir
+10)	Interface yapilarda istenirse abstract olmayan concrete method creat
+	edilebilir.
+	a) Aess Modfier den sonra default veya static keyword kullanilmali.
+	b) Interface yapilarda concrete method icin kullanilan default keyword u
+	kesinlikle asla Access Modifier turunu vermez.
+	c) Interface yapilarda concrete method child class tarafindan override 
+	edilmek zorunda degildir.
+	d) Interface yapilarda default olarak creat edilen concrete method
+	child class a ancak obje ile call edilir.
+	e) Interface yapilarda static olarak creat edilen concrete method
+	child class aancak datatype(interface name) ile call edilir.

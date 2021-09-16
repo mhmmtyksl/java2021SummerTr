@@ -1,0 +1,33 @@
+package day06_relationalOperators_ifStatements;
+
+import java.util.Scanner;
+
+public class C5_IfStatements04 {
+
+	public static void main(String[] args) {
+		
+		// Soru 4) Kullanicidan dikdortgenin kenar uzunluklarini isteyin ve dikdortgenin kare olup olmadigini yazdirin
+		
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Lutfen kenar uzunluklarindan birini tamsayi olark giriniz");
+		int kenar1=scan.nextInt();
+		
+		System.out.println("Lutfen diger kenar uzunlugunu tamsayi olark giriniz");
+		int kenar2=scan.nextInt();
+		
+		if (kenar1==kenar2) {
+			System.out.println("girdiginiz dortgen bir kare");
+		}
+		if (kenar1!=kenar2) {
+			System.out.println("girdiginiz dortgen bir kare degil");
+		}
+	
+	
+	
+	
+	scan.close();
+	}
+
+}

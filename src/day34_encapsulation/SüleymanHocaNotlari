@@ -1,0 +1,38 @@
+1- Encapsulation kısaca data hiding(saklamak) demektir.
+	 
+	 2- Başarılı bir encapsulation aşağıdaki özelliklere sahip olmalı
+	 	a)Nasıl kullanılacağı belli olmalı --> direksiyon gibi
+	 	b)Kodun karmaşıklığı kullanımın karmaşıklığına sebep olmamalı
+	 	yani çok karmaşık kodlardan oluşan bir yapı basit bir şekilde kullanılabilmeli
+	 	c)Bir bölümün bozulması başka böümlerin bozulmasına sebep olmamalı
+	 
+	 3-Encapsulation nasıl yapılır?
+	 	a)access modifierler "private" olarak kullanınız.
+	 	b)getter ve setter methodları ile "encapsulated" datalara ulaşıp onları okuyabilir(getter) ve değiştirebiliriz(setter)
+	 	
+	 4- Encapsulation nın faydaları
+	 	a)Esneklik (flexibility) Normalde aşağıda age variablenın değeri 25'tir. ama diğer classlarda 
+	 	setAge() method unu kullanarak age variable nin değerini
+	 	istediğimiz gibi değiştirip kullanabiliriz.
+	 	
+	 	b)Reusabilitiy(tekrar kullanılabilirlik) getter ve setter methodları birkez oluştururuz sonra proje içindeki 
+	 	classlardan istediğimiz kadar kullanabiliriz.
+	 	
+	 	c)İstediğiniz datayı okunabilir(getter() oluşturarak) istediğiniz datayı okunamaz(getter() oluşturmayız) 
+	 	hale getirebilirsiniz.
+	 	
+	 	d)istediğiniz datayı değiştirilebilir(setter oluşturarak), istediğiniz datayı değiştirilemez yapabilirsiniz...
+	 	
+	not: tüm variable lar private ve sadece getter methodlar oluşturulduğunda bu classtaki veriler sadedece okunabilir.
+	bu tarz class lara "Immutable class" denir.
+	
+		e-Kullanıcının kullandığı sistem arkasındaki karmaşık yapıyı kullanıcıya göstermez. böylece kullanıcı yapmak
+		istediklerini daha rahat yapar.
+		
+	5- bir classta tüm variable lar private ise ve tüm getter ve setter lar oluşturulmuş ise bu class 
+	   "Fully Encapsulated" olarak adlandırılır.
+	   
+	6- getter() ve setter() methodlarına "Java Beans" de denir. 
+	
+	not: data type boolean olduğunda getter method un ismi "get" ile değil "is" ile başlar.
+	
